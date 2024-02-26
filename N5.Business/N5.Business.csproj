@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+    <ItemGroup>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	</ItemGroup>		
+	
+  <ItemGroup>
+    <ProjectReference Include="..\N5.Core\N5.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Commons\" />
+    <None Remove="Commons\Behaviours\" />
+    <None Remove="Commons\Exceptions\" />
+    <None Remove="Commons\Mappers\" />
+    <None Remove="Features\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\DataAccess\" />
+    <None Remove="Validators\" />
+    <None Remove="Interfaces\Services\" />
+    <None Remove="Features\PermissionType\" />
+    <None Remove="Features\Permission\" />
+    <None Remove="Features\Permission\Queries\" />
+    <None Remove="Features\Permission\Commands\" />
+    <None Remove="Validators\PermissionType\" />
+    <None Remove="Validators\PermissionType\Queries\" />
+    <None Remove="Validators\PermissionType\Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commons\" />
+    <Folder Include="Commons\Behaviours\" />
+    <Folder Include="Commons\Exceptions\" />
+    <Folder Include="Commons\Mappers\" />
+    <Folder Include="Features\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\DataAccess\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Features\PermissionType\" />
+    <Folder Include="Features\Permission\" />
+    <Folder Include="Features\Permission\Queries\" />
+    <Folder Include="Features\Permission\Commands\" />
+    <Folder Include="Validators\PermissionType\" />
+    <Folder Include="Validators\PermissionType\Queries\" />
+    <Folder Include="Validators\PermissionType\Commands\" />
+  </ItemGroup>
+</Project>

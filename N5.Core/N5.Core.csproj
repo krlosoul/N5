@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Dtos\" />
+    <None Remove="Messages\" />
+    <None Remove="Enums\" />
+    <None Remove="Dtos\Permission\" />
+    <None Remove="Dtos\PermissionType\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Dtos\Permission\" />
+    <Folder Include="Dtos\PermissionType\" />
+  </ItemGroup>
+
+</Project>

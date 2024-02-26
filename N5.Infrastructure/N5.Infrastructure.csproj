@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+      <PackageReference Include="Confluent.Kafka" Version="2.1.0" />
+      <PackageReference Include="NEST" Version="7.17.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\N5.Business\N5.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\" />
+    <None Remove="Common\Constants\" />
+    <None Remove="Common\Dtos\" />
+    <None Remove="DataAccess\" />
+    <None Remove="Extensions\" />
+    <None Remove="DataAccess\Configurations\" />
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\Constants\" />
+    <Folder Include="Common\Dtos\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="DataAccess\Configurations\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+</Project>
